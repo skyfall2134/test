@@ -19,7 +19,7 @@ INVENTORY_ITEM_IMAGES = (By.CSS_SELECTOR, ".inventory_item_img")
 @pytest.fixture
 def driver():
     options = Options()
-    options.add_argument("--headless=new")  # comment out to run with visible browser
+    options.add_argument("--headless=new")  
     options.add_argument("--window-size=1280,720")
 
     driver = webdriver.Chrome(service=ChromeService(), options=options)
